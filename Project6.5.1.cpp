@@ -8,8 +8,8 @@ T square(T value) {
 	return value * value;
 }
 
-template <>
-vector<int> square(vector<int> vec) {
+template <typename T>
+vector<T> square(vector<T> vec) {
 	for(int &element : vec) {
 		element = element * element; 
 	}
